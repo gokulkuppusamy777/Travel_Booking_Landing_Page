@@ -208,9 +208,7 @@ export default function Footer() {
           <p className="text-sm text-navy-400">
             &copy; {new Date().getFullYear()} TravelPulse. All rights reserved.
           </p>
-          <p className="text-sm text-navy-400 flex items-center gap-1">
-            Made with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400" /> for travelers
-          </p>
+          
         </div>
       </div>
     </footer>
