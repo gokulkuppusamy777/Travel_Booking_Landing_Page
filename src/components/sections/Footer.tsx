@@ -106,15 +106,15 @@ export default function Footer() {
             <div className="flex flex-col gap-3 mb-6">
               <div className="flex items-center gap-3 text-sm text-navy-300">
                 <MapPin className="w-4 h-4 text-primary-400" />
-                <span>123 Travel Avenue, New York, NY 10001</span>
+                <span>ERODE</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-navy-300">
                 <Phone className="w-4 h-4 text-primary-400" />
-                <span>+1 (800) 123-4567</span>
+                <span>+91 8122871414</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-navy-300">
                 <Mail className="w-4 h-4 text-primary-400" />
-                <span>hello@travelpulse.com</span>
+                <span>gokulkuppusamy007@gmail.com</span>
               </div>
             </div>
             <div className="flex gap-3">
