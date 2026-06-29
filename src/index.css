@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    @apply antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+  .glass-dark {
+    @apply bg-navy-900/70 backdrop-blur-lg border border-white/10;
+  }
+  .card-shadow {
+    @apply shadow-lg shadow-navy-900/10;
+  }
+  .card-shadow-hover {
+    @apply shadow-2xl shadow-navy-900/20;
+  }
+  .gradient-hero {
+    background: linear-gradient(135deg, rgba(14,165,233,0.15) 0%, rgba(13,184,166,0.15) 50%, rgba(217,70,239,0.1) 100%);
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-teal-500;
+  }
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-teal-500 text-white font-semibold rounded-xl
+           hover:from-primary-600 hover:to-teal-600 transition-all duration-300 shadow-lg shadow-primary-500/25
+           hover:shadow-xl hover:shadow-primary-500/30 active:scale-95;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 bg-white/90 text-navy-900 font-semibold rounded-xl
+           hover:bg-white transition-all duration-300 shadow-lg
+           hover:shadow-xl active:scale-95;
+  }
+  .input-field {
+    @apply w-full px-4 py-3 bg-white/90 border border-navy-200 rounded-xl
+           focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent
+           transition-all duration-200 dark:bg-navy-800 dark:border-navy-700 dark:text-white;
+  }
+  .section-padding {
+    @apply py-20 md:py-28 px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+}
